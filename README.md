@@ -5,6 +5,7 @@ Instructions:
 ProjectGoal:
 
 BuildSomethingAwesomeRequirements:
+
 1.MustusesatleasttwoAPIs
 2.MustuseAJAXtopulldata
 3.Mustutilizeatleastonenewlibraryortechnologythatwehavenʼtdiscussed
@@ -15,8 +16,6 @@ BuildSomethingAwesomeRequirements:
 8.MustuseBootstraporAlternativeCSSFramework
 9.MustbeDeployed(GitHubPagesorFirebase)
 10.MusthaveUserInputValidation
-
-
 
 
 PresentationDate:TwoWeeksfromToday(Oct1,2019)
