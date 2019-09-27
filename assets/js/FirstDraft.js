@@ -37,10 +37,10 @@ var pubKey = "dba1c4ca26b084dd52bd9bb090fa19d8";
           var desc = results.description;
 
           // Creating an element to hold the release year
-          var pTwo = $("<p>").text("Description: " + desc);
+         var pTwo = $("<p>").text("Description: " + desc);
 
           // Displaying the release year
-          movieDiv.append(pTwo);
+          $('#bio').append(pTwo);
 
           // Appending the plot
 
@@ -54,7 +54,7 @@ var pubKey = "dba1c4ca26b084dd52bd9bb090fa19d8";
           var image = $("<img>").attr("src", imgURL);
 
           // Appending the image
-          movieDiv.append(image);
+          $('#bio').append(image);
 
           // Putting the entire movie above the previous movies
           $("#movies-view").prepend(movieDiv);
@@ -66,17 +66,18 @@ var pubKey = "dba1c4ca26b084dd52bd9bb090fa19d8";
           }).then(function (response) {
             console.log(response);
             results2 = response.data.results
-            for (var i = 0; i < results2.length; i++) {
+            for (let i = 0; i < results2.length; i++) {             
+            
               comicTitle = results2[i].title;
               comicThumb = results2[i].thumbnail;
               comicExt = "." + comicThumb.extension;
               comicURL = comicThumb.path + comicExt;
               comicIMG = $('<img>').attr('src', comicURL);
-              movieDiv.append(comicIMG);
+              $('.carousel-item').append(comicIMG);
               var pThree = $("<p>").text("Comic: " + comicTitle);
               movieDiv.append(pThree);
+            
             }
-
 
 
 
